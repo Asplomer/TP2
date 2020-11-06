@@ -1,0 +1,22 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 750.0
+margin_top = 300.0
+margin_right = 902.0
+margin_bottom = 314.0
+rect_scale = Vector2( 3, 3 )
+text = "GAME NAME PENDING*"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
