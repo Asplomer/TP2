@@ -1,11 +1,22 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/levels/intro.gd" type="Script" id=1]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 640.0
+margin_top = 200.0
+margin_right = 779.0
+margin_bottom = 214.0
+rect_scale = Vector2( 4, 4 )
 text = "CUTSCENE GOES HERE"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+script = ExtResource( 1 )
+[connection signal="timeout" from="Timer" to="Timer" method="_on_Timer_timeout"]
