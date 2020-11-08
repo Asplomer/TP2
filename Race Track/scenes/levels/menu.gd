@@ -10,7 +10,8 @@ func _ready():
 
 
 func _on_Play_pressed():
-	get_tree().change_scene("res://scenes/levels/game.tscn")
+	#get_tree().change_scene("res://scenes/levels/game.tscn")
+	get_tree().change_scene("res://scenes/test2.tscn")
 	pass 
 
 
