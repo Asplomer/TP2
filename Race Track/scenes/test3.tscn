@@ -1,0 +1,98 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/platforms/bounce.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/platforms/floor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/platforms/zerograv.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bounce" parent="." instance=ExtResource( 3 )]
+position = Vector2( -342.004, -562.378 )
+scale = Vector2( 3.24, 1.56 )
+
+[node name="bounce2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3158.55, 2906.56 )
+scale = Vector2( 3.24, 1.56 )
+
+[node name="floor" parent="." instance=ExtResource( 4 )]
+position = Vector2( 750.435, -635.676 )
+scale = Vector2( 3.24, 1.56 )
+
+[node name="floor3" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1199.17, 547.029 )
+scale = Vector2( 3.24, 1.56 )
+
+[node name="floor4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 223.284, 749.975 )
+rotation = -0.989582
+scale = Vector2( 3.24, 1.56 )
+
+[node name="floor6" parent="." instance=ExtResource( 4 )]
+position = Vector2( -14.0959, 2061.41 )
+rotation = 0.853327
+scale = Vector2( 8.24508, 1.56 )
+
+[node name="zerograv" parent="." instance=ExtResource( 7 )]
+position = Vector2( -708.573, 528.745 )
+
+[node name="zerograv2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -61.9207, 1810.21 )
+
+[node name="zerograv3" parent="." instance=ExtResource( 7 )]
+position = Vector2( -389.559, 537.921 )
+
+[node name="zerograv6" parent="." instance=ExtResource( 7 )]
+position = Vector2( -366.95, -319.162 )
+
+[node name="zerograv7" parent="." instance=ExtResource( 7 )]
+position = Vector2( -210.467, -358.31 )
+
+[node name="zerograv8" parent="." instance=ExtResource( 7 )]
+position = Vector2( -72.882, -374.13 )
+
+[node name="zerograv9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 69.5904, -402.906 )
+
+[node name="zerograv10" parent="." instance=ExtResource( 7 )]
+position = Vector2( 202.91, -463.436 )
+
+[node name="zerograv11" parent="." instance=ExtResource( 7 )]
+position = Vector2( 349.404, -534.492 )
+
+[node name="zerograv4" parent="." instance=ExtResource( 7 )]
+position = Vector2( -751.907, 1180.79 )
+
+[node name="zerograv5" parent="." instance=ExtResource( 7 )]
+position = Vector2( -60.7202, 568.159 )
+
+[node name="floor5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1820.17, 2898.41 )
+scale = Vector2( 8.6075, 2.27598 )
+
+[node name="floor2" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1275.26, -266.983 )
+scale = Vector2( 6.2883, 1.77419 )
+
+[node name="car" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2164.24, 385.718 )
+
+[node name="magnet" parent="." instance=ExtResource( 1 )]
+position = Vector2( 3100.67, 954.061 )
+rotation = 1.05666
+scale = Vector2( 32.0386, 3.09997 )
+
+[node name="goal" parent="." instance=ExtResource( 6 )]
+position = Vector2( -2256.44, -293.292 )
+scale = Vector2( 2.44, 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -2549.66, -528.008 )
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 132.692, -124.527, -69.1235, -126.208, -68.3313, 1227.33, 973.414, 1243.97, 971.036, 1034.67, 133.833, 1032.3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 130.232, -124.142, -72.9551, -127.317, -69.7803, 1225.15, 974.729, 1244.2, 971.555, 1034.66, 133.407, 1031.49 )
