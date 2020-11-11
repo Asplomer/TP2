@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://scenes/levels/LevelClearTime.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/platforms/bounce.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=4]
@@ -71,6 +72,9 @@ scale = Vector2( 8.45021, 2.41955 )
 position = Vector2( 768.158, 2841.84 )
 rotation = -1.59054
 scale = Vector2( 4.6549, 2.41955 )
+
+[node name="timer" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1079.56, -1148.22 )
 
 [node name="bounce4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 115.483, 1330.76 )

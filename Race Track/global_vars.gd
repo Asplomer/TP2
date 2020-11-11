@@ -6,6 +6,8 @@ var timelvl3 = 0.0
 
 var collect = 0
 
+
+
 func _ready():
 	pass # Replace with function body.
 
