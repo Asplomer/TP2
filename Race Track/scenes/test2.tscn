@@ -9,7 +9,8 @@
 
 [sub_resource type="PhysicsMaterial" id=1]
 
-[node name="Node2D" type="Node2D"]
+[node name="Level2" type="Node2D"]
+position = Vector2( 475.924, 1764.51 )
 
 [node name="freeshape" type="StaticBody2D" parent="."]
 position = Vector2( 379.438, 434.182 )
@@ -115,3 +116,6 @@ polygon = PoolVector2Array( 246.945, -813.875, -166.309, -816.394, -690.437, -92
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D3"]
 polygon = PoolVector2Array( 341.57, -1215.44, 398.505, -1016.17, 248.675, -815.397, -170.852, -815.397, -690.764, -924.773, -714.737, -794.42, 5.94873, -545.701, 48.2979, 615.772, -210.448, 720.541, -518.404, 711.016, -604.124, 676.093, -551.74, 753.876, -507.292, 868.169, 375.302, 838.008, 467.372, -1222.44 )
+
+[node name="goal2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 907.131, -10.0126 )

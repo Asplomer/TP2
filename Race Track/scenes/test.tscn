@@ -12,7 +12,7 @@
 
 [sub_resource type="PhysicsMaterial" id=1]
 
-[node name="Node2D" type="Node2D"]
+[node name="Level1" type="Node2D"]
 
 [node name="freeshape" type="StaticBody2D" parent="."]
 position = Vector2( 379.438, 434.182 )

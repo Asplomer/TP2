@@ -8,7 +8,7 @@
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/platforms/zerograv.tscn" type="PackedScene" id=7]
 
-[node name="Node2D" type="Node2D"]
+[node name="Level3" type="Node2D"]
 
 [node name="timer" parent="." instance=ExtResource( 5 )]
 position = Vector2( -2641.96, 118.244 )

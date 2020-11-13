@@ -5,9 +5,13 @@ const level1 = preload("res://scenes/test.tscn")
 const level2 = preload("res://scenes/test2.tscn")
 const level3 = preload("res://scenes/test3.tscn")
 var CurrentInstance = level1.instance()
+
+
 func _ready():
 	self.add_child(CurrentInstance)
-	pass # Replace with function body.
+	get_tree().call_group("Goals", "connect", "detected", self, "_next_level")
+	pass 
+
 
 
 
@@ -17,15 +21,19 @@ func _process(delta):
 
 func _next_level():
 
-		queue_free()
+		CurrentInstance.queue_free()
 		match level_counter:
 			0:
-				self.add_child(CurrentInstance)
 				CurrentInstance = level2.instance()
-			1:
+				level_counter +=1
 				self.add_child(CurrentInstance)
+			1:
 				CurrentInstance = level3.instance()
+				level_counter +=1
+				self.add_child(CurrentInstance)
+				
 			2: 
+				level_counter +=1
 				self.add_child(CurrentInstance)
 				#CurrentInstance = level4.instance()
 			3:
