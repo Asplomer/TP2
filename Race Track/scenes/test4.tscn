@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/platforms/floor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/levels/LevelClearTime.tscn" type="PackedScene" id=9]
+
+[node name="Level1" type="Node2D"]
+
+[node name="car" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2545.32, 1974.63 )
+
+[node name="goal" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3444.87, -2088.26 )
+
+[node name="floor6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 937.383, -2621.61 )
+rotation = 3.14159
+scale = Vector2( 70.9448, 12.2647 )
+
+[node name="timer" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4589.09, -327.923 )
+
+[node name="floor" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3929.22, 380.549 )
+rotation = 1.56803
+scale = Vector2( 20.0824, 11.6357 )
+
+[node name="floor2" parent="." instance=ExtResource( 4 )]
+position = Vector2( -2522.59, 387.582 )
+rotation = 1.56803
+scale = Vector2( 20.0824, 11.6357 )
+
+[node name="floor3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2475.38, 1345.81 )
+scale = Vector2( 27.1703, -7.83751 )
+
+[node name="floor4" parent="." instance=ExtResource( 4 )]
+position = Vector2( -2179.09, 154.829 )
+scale = Vector2( 17.2586, -7.83751 )
+
+[node name="floor7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3118.93, 127.889 )
+scale = Vector2( 17.2586, -7.83751 )
+
+[node name="floor5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2004.04, -1047.15 )
+scale = Vector2( 27.1703, -7.83751 )
+
+[node name="magnet" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1273.24, 1307.45 )
+scale = Vector2( 33.3585, 5.58645 )
+
+[node name="magnet4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1484.31, -1053.5 )
+scale = Vector2( 16.3273, 7.27065 )
+
+[node name="magnet2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -2349.86, -353.957 )
+rotation = -1.5758
+scale = Vector2( 48.9673, 4.79065 )
+
+[node name="magnet3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 3704.52, -2111.96 )
+rotation = -4.70924
+scale = Vector2( 48.9673, 4.79065 )

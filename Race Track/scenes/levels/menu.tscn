@@ -84,6 +84,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button5" type="Button" parent="."]
+margin_left = 450.894
+margin_top = 417.428
+margin_right = 497.894
+margin_bottom = 437.428
+rect_scale = Vector2( 4, 4 )
+text = "Test4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Button2" type="Button" parent="."]
 margin_left = 868.115
 margin_top = 537.117
@@ -97,4 +108,5 @@ __meta__ = {
 [connection signal="pressed" from="Button" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_to_Test2_pressed"]
 [connection signal="pressed" from="Button4" to="." method="_on_To_Test3_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Exit_pressed"]

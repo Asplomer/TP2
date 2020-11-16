@@ -4,6 +4,7 @@ var level_counter = 0
 const level1 = preload("res://scenes/test.tscn")
 const level2 = preload("res://scenes/test2.tscn")
 const level3 = preload("res://scenes/test3.tscn")
+const level4 = preload("res://scenes/test4.tscn")
 var CurrentInstance = level1.instance()
 
 
@@ -29,9 +30,10 @@ func _next_level():
 				level_counter +=1
 				call_deferred("_add_level")
 			2: 
+				CurrentInstance = level4.instance()
 				level_counter +=1
 				call_deferred("_add_level")
-				#CurrentInstance = level4.instance()
+				#
 			3:
 				get_tree().change_scene("res://scenes/levels/menu.tscn")
  
