@@ -65,3 +65,34 @@ scale = Vector2( 48.9673, 4.79065 )
 position = Vector2( 3704.52, -2111.96 )
 rotation = -4.70924
 scale = Vector2( 48.9673, 4.79065 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 201.815, 773.625 )
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+position = Vector2( 66.7421, -45.3846 )
+polygon = PoolVector2Array( 339.569, -55.9919, 412.985, -113.39, 236.787, -274.906, 310.203, -337.643, 121.99, -340.313, 105.972, -176.128, 170.045, -233.526 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2( -1301.34, -1928.25 )
+rotation = 1.94388
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D4"]
+position = Vector2( 66.7421, -45.3846 )
+polygon = PoolVector2Array( 339.569, -55.9919, 412.985, -113.39, 236.787, -274.906, 310.203, -337.643, 121.99, -340.313, 105.972, -176.128, 170.045, -233.526 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 2409.64, 2185.89 )
+rotation = -0.824407
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D3"]
+position = Vector2( 66.7421, -45.3846 )
+polygon = PoolVector2Array( 339.569, -55.9919, 412.985, -113.39, 236.787, -274.906, 310.203, -337.643, 121.99, -340.313, 105.972, -176.128, 170.045, -233.526 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( -1223.51, 312.004 )
+rotation = 2.29362
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D2"]
+position = Vector2( 66.7421, -45.3846 )
+polygon = PoolVector2Array( 339.569, -55.9919, 412.985, -113.39, 236.787, -274.906, 310.203, -337.643, 121.99, -340.313, 105.972, -176.128, 170.045, -233.526 )
