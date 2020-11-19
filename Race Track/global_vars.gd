@@ -11,7 +11,7 @@ var timelvl4 = 0
 var currentTime = 0
 
 
-var currentTime = 0
+
 
 
 var collect = 0

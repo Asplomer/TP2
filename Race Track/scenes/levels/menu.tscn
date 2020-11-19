@@ -7,10 +7,10 @@
 script = ExtResource( 1 )
 
 [node name="Best Time 1" type="Label" parent="."]
-margin_left = 1293.29
-margin_top = 889.643
-margin_right = 1445.29
-margin_bottom = 903.643
+margin_left = 1285.28
+margin_top = 34.0785
+margin_right = 1437.28
+margin_bottom = 48.0785
 rect_scale = Vector2( 4, 4 )
 text = "Best Time Level 1: 0"
 align = 1
@@ -20,10 +20,10 @@ __meta__ = {
 }
 
 [node name="Best Time 2" type="Label" parent="."]
-margin_left = 1294.29
-margin_top = 945.643
-margin_right = 1446.29
-margin_bottom = 959.643
+margin_left = 1286.28
+margin_top = 90.0785
+margin_right = 1438.28
+margin_bottom = 104.078
 rect_scale = Vector2( 4, 4 )
 text = "Best Time Level 2: 0"
 align = 1
@@ -33,10 +33,23 @@ __meta__ = {
 }
 
 [node name="Best Time 3" type="Label" parent="."]
-margin_left = 1294.29
-margin_top = 999.643
-margin_right = 1446.29
-margin_bottom = 1013.64
+margin_left = 1286.28
+margin_top = 144.078
+margin_right = 1438.28
+margin_bottom = 158.078
+rect_scale = Vector2( 4, 4 )
+text = "Best Time Level 3: 0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Best Time 4" type="Label" parent="."]
+margin_left = 1286.28
+margin_top = 202.078
+margin_right = 1438.28
+margin_bottom = 216.078
 rect_scale = Vector2( 4, 4 )
 text = "Best Time Level 3: 0"
 align = 1

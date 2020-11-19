@@ -6,6 +6,7 @@ func _ready():
 	$"Best Time 1".text = "Best Time Level 1: " + str(VariablesGlobales.besttime1)
 	$"Best Time 2".text = "Best Time Level 2: " + str(VariablesGlobales.besttime2)
 	$"Best Time 3".text = "Best Time Level 3: " + str(VariablesGlobales.besttime3)
+	$"Best Time 4".text = "Best Time Level 4: " + str(VariablesGlobales.besttime4)
 	pass 
 
 
