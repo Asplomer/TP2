@@ -1,7 +1,7 @@
 extends Node2D
 
 var level_counter = 0
-const level1 = preload("res://scenes/test.tscn")
+const level1 = preload("res://scenes/test1.tscn")
 const level2 = preload("res://scenes/test2.tscn")
 const level3 = preload("res://scenes/test3.tscn")
 const level4 = preload("res://scenes/test4.tscn")
