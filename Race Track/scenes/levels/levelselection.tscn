@@ -1,6 +1,9 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/levels/levelselection.gd" type="Script" id=1]
 
 [node name="LevelSelect" type="Node2D"]
+script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
@@ -9,3 +12,63 @@ text = "Level select goes here*"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="menu" type="Button" parent="."]
+margin_left = 828.722
+margin_top = 755.099
+margin_right = 876.722
+margin_bottom = 775.099
+rect_scale = Vector2( 3, 3 )
+text = "Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl1" type="Button" parent="."]
+margin_left = 281.275
+margin_top = 392.652
+margin_right = 339.275
+margin_bottom = 412.652
+rect_scale = Vector2( 3, 3 )
+text = "Level 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl2" type="Button" parent="."]
+margin_left = 585.202
+margin_top = 392.652
+margin_right = 643.202
+margin_bottom = 412.652
+rect_scale = Vector2( 3, 3 )
+text = "Level 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl3" type="Button" parent="."]
+margin_left = 957.089
+margin_top = 390.764
+margin_right = 1015.09
+margin_bottom = 410.764
+rect_scale = Vector2( 3, 3 )
+text = "Level 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl4" type="Button" parent="."]
+margin_left = 1300.66
+margin_top = 386.988
+margin_right = 1358.66
+margin_bottom = 406.988
+rect_scale = Vector2( 3, 3 )
+text = "Level 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="lvl1" to="." method="_on_lvl1_pressed"]
+[connection signal="pressed" from="lvl2" to="." method="_on_lvl2_pressed"]
+[connection signal="pressed" from="lvl3" to="." method="_on_lvl3_pressed"]
+[connection signal="pressed" from="lvl4" to="." method="_on_lvl4_pressed"]

@@ -34,3 +34,13 @@ func _on_To_Test3_pressed():
 func _on_Button5_pressed():
 	get_tree().change_scene("res://scenes/test4.tscn")
 	pass # Replace with function body.
+
+
+func _on_Button6_pressed():
+	get_tree().change_scene("res://scenes/levels/Credits.tscn")
+	pass # Replace with function body.
+
+
+func _on_Button7_pressed():
+	get_tree().change_scene("res://scenes/levels/levelselection.tscn")
+	pass # Replace with function body.

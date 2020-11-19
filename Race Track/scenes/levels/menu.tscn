@@ -94,6 +94,28 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button6" type="Button" parent="."]
+margin_left = 1089.86
+margin_top = 537.117
+margin_right = 1127.86
+margin_bottom = 557.117
+rect_scale = Vector2( 4, 4 )
+text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button7" type="Button" parent="."]
+margin_left = 366.009
+margin_top = 533.942
+margin_right = 475.009
+margin_bottom = 553.942
+rect_scale = Vector2( 4, 4 )
+text = "Level Selection"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Logo1" type="Sprite" parent="."]
 position = Vector2( 841.026, 264.19 )
 texture = ExtResource( 2 )
@@ -102,3 +124,5 @@ texture = ExtResource( 2 )
 [connection signal="pressed" from="Button4" to="." method="_on_To_Test3_pressed"]
 [connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_Button7_pressed"]

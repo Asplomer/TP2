@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="TwerkingGodot"
+config/name="Race Track"
 run/main_scene="res://scenes/levels/intro.tscn"
 config/icon="res://icon.png"
 
