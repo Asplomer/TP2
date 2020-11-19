@@ -6,9 +6,12 @@
 script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "Made by Ariel Plomer, "
+margin_left = 209.544
+margin_top = 434.628
+margin_right = 568.544
+margin_bottom = 456.628
+rect_scale = Vector2( 4, 4 )
+text = "Made by Ivan Medeiro, Ariel Plomer, Ignacio Pourteau"
 __meta__ = {
 "_edit_use_anchors_": false
 }
