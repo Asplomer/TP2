@@ -1,11 +1,13 @@
 extends Node
 
-var timelvl1 = 0.0
+var timelvl1 = 0
 var besttime1 = 0
-var timelvl2 = 0.0
+var timelvl2 = 0
 var besttime2 = 0
-var timelvl3 = 0.0
+var timelvl3 = 0
 var besttime3 = 0
+var besttime4 = 0
+var timelvl4 = 0
 
 var collect = 0
 
@@ -23,3 +25,8 @@ func best_time_3 (new_time_3):
 	timelvl3 = new_time_3
 	if new_time_3 > besttime3:
 		besttime3 = new_time_3
+
+func best_time_4 (new_time_4):
+	timelvl4 = new_time_4
+	if new_time_4 > besttime4:
+		besttime4 = new_time_4

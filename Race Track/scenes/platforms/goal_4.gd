@@ -11,5 +11,6 @@ func _ready():
 
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("wheels"):
+		VariablesGlobales.best_time_4(currentTime)
 		emit_signal("detected")
 	pass 
