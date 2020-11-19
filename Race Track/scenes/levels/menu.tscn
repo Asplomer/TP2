@@ -6,7 +6,7 @@
 [node name="Menu" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="Label2" type="Label" parent="."]
+[node name="timescore" type="Label" parent="."]
 margin_left = 1294.29
 margin_top = 889.643
 margin_right = 1446.29
@@ -19,7 +19,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label3" type="Label" parent="."]
+[node name="collectibles" type="Label" parent="."]
+visible = false
 margin_left = 1294.29
 margin_top = 945.643
 margin_right = 1446.29
@@ -50,39 +51,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="."]
-margin_left = 1046.98
-margin_top = 418.684
-margin_right = 1084.98
-margin_bottom = 438.684
-rect_scale = Vector2( 4, 4 )
-text = "Test2"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button4" type="Button" parent="."]
-margin_left = 654.541
-margin_top = 416.014
-margin_right = 701.541
-margin_bottom = 436.014
-rect_scale = Vector2( 4, 4 )
-text = "Test3"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button5" type="Button" parent="."]
-margin_left = 450.894
-margin_top = 417.428
-margin_right = 497.894
-margin_bottom = 437.428
-rect_scale = Vector2( 4, 4 )
-text = "Test4"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Button2" type="Button" parent="."]
 margin_left = 868.115
 margin_top = 537.117
@@ -98,7 +66,4 @@ __meta__ = {
 position = Vector2( 841.026, 264.19 )
 texture = ExtResource( 2 )
 [connection signal="pressed" from="Button" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_to_Test2_pressed"]
-[connection signal="pressed" from="Button4" to="." method="_on_To_Test3_pressed"]
-[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Exit_pressed"]
