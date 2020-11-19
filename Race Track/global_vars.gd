@@ -9,7 +9,17 @@ var besttime3 = 0
 var besttime4 = 0
 var timelvl4 = 0
 
+var currentTime = 0
+
+
 var collect = 0
+
+
+
+func _on_Timer_timeout():
+	currentTime += 1
+	
+	
 
 func best_time_1 (new_time_1):
 	timelvl1 = new_time_1

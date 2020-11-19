@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -10,10 +10,12 @@
 [ext_resource path="res://images/seamless.png" type="Texture" id=8]
 [ext_resource path="res://scenes/levels/LevelClearTime.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/platforms/goal_1.gd" type="Script" id=10]
+[ext_resource path="res://scenes/test.gd" type="Script" id=11]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource( 11 )
 
 [node name="freeshape" type="StaticBody2D" parent="."]
 position = Vector2( 379.438, 434.182 )

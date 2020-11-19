@@ -16,10 +16,4 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func update_time():
-	get_tree().get_nodes_in_group("Time")[0].text = String(currentTime)
-
-func _on_Timer_timeout():
-	currentTime += 1
-	update_time()
-	pass # Replace with function body.
+ # Replace with function body.
