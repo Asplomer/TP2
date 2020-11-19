@@ -1,9 +1,9 @@
 extends Timer
 
-
+onready var animator = get_node("AnimationPlayer")
 
 func _ready():
-	
+	animator.play("intro")
 	pass 
 	
 func to_menu():
