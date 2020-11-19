@@ -57,8 +57,8 @@ position = Vector2( 1273.24, 1307.45 )
 scale = Vector2( 33.3585, 5.58645 )
 
 [node name="magnet4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 843.587, -1054.82 )
-scale = Vector2( 25.8873, 7.27065 )
+position = Vector2( 1290.73, -1054.82 )
+scale = Vector2( 19.2073, 7.27065 )
 
 [node name="magnet2" parent="." instance=ExtResource( 1 )]
 position = Vector2( -2349.86, -353.957 )

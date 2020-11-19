@@ -64,6 +64,9 @@ position = Vector2( 1436.06, 427.387 )
 [node name="bounce4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1540.18, 830.509 )
 
+[node name="bounce5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1679.32, 830.509 )
+
 [node name="bounce2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1302.06, 428.387 )
 
