@@ -10,7 +10,12 @@ var besttime4 = 0
 var timelvl4 = 0
 var currentTime = 0
 
-
+var level_counter = 0
+const level1 = preload("res://scenes/test1.tscn")
+const level2 = preload("res://scenes/test2.tscn")
+const level3 = preload("res://scenes/test3.tscn")
+const level4 = preload("res://scenes/test4.tscn")
+var CurrentInstance = level1.instance()
 
 
 

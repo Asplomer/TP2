@@ -1,11 +1,6 @@
 extends Node2D
 
-var level_counter = 0
-const level1 = preload("res://scenes/test1.tscn")
-const level2 = preload("res://scenes/test2.tscn")
-const level3 = preload("res://scenes/test3.tscn")
-const level4 = preload("res://scenes/test4.tscn")
-var CurrentInstance = level1.instance()
+
 
 
 func _ready():
@@ -19,19 +14,19 @@ func _process(delta):
 
 func _next_level():
 		get_tree().call_group("Goals", "disconnect", "detected", self, "_next_level")
-		CurrentInstance.queue_free()
-		match level_counter:
+		VariablesGlobales.CurrentInstance.queue_free()
+		match VariablesGlobales.level_counter:
 			0:
-				CurrentInstance = level2.instance()
-				level_counter +=1
+				VariablesGlobales.CurrentInstance = VariablesGlobales.level2.instance()
+				VariablesGlobales.level_counter +=1
 				call_deferred("_add_level")
 			1:
-				CurrentInstance = level3.instance()
-				level_counter +=1
+				VariablesGlobales.CurrentInstance = VariablesGlobales.level3.instance()
+				VariablesGlobales.level_counter +=1
 				call_deferred("_add_level")
 			2: 
-				CurrentInstance = level4.instance()
-				level_counter +=1
+				VariablesGlobales.CurrentInstance = VariablesGlobales.level4.instance()
+				VariablesGlobales.level_counter +=1
 				call_deferred("_add_level")
 				#
 			3:
@@ -40,5 +35,5 @@ func _next_level():
 pass
  
 func _add_level():
-	self.add_child(CurrentInstance)
+	self.add_child(VariablesGlobales.CurrentInstance)
 	get_tree().call_group("Goals", "connect", "detected", self, "_next_level")

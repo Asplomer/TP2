@@ -1,41 +1,36 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
-
-func _on_menu_pressed():
+func _on_menuB_pressed():
 	get_tree().change_scene("res://scenes/levels/menu.tscn")
 	pass # Replace with function body.
 
 
-func _on_lvl1_pressed():
-	get_tree().change_scene("res://scenes/test.tscn")
+func _on_lvl1B_pressed():
+	get_tree().change_scene("res://scenes/test1.tscn")
+	
 	pass # Replace with function body.
 
 
-func _on_lvl2_pressed():
+func _on_lvl2B_pressed():
 	get_tree().change_scene("res://scenes/test2.tscn")
+	VariablesGlobales.level_counter += 1
 	pass # Replace with function body.
 
 
-func _on_lvl3_pressed():
+func _on_lvl3B_pressed():
 	get_tree().change_scene("res://scenes/test3.tscn")
+	VariablesGlobales.level_counter += 3
 	pass # Replace with function body.
 
 
-func _on_lvl4_pressed():
+func _on_lvl4B_pressed():
 	get_tree().change_scene("res://scenes/test4.tscn")
+	VariablesGlobales.level_counter += 4
 	pass # Replace with function body.

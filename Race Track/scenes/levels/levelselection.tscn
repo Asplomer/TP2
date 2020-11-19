@@ -14,7 +14,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="menu" type="Button" parent="."]
+[node name="menuB" type="Button" parent="."]
 margin_left = 828.722
 margin_top = 755.099
 margin_right = 876.722
@@ -25,7 +25,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="lvl1" type="Button" parent="."]
+[node name="lvl1B" type="Button" parent="."]
 margin_left = 281.275
 margin_top = 392.652
 margin_right = 339.275
@@ -36,7 +36,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="lvl2" type="Button" parent="."]
+[node name="lvl2B" type="Button" parent="."]
 margin_left = 585.202
 margin_top = 392.652
 margin_right = 643.202
@@ -47,7 +47,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="lvl3" type="Button" parent="."]
+[node name="lvl3B" type="Button" parent="."]
 margin_left = 957.089
 margin_top = 390.764
 margin_right = 1015.09
@@ -58,7 +58,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="lvl4" type="Button" parent="."]
+[node name="lvl4B" type="Button" parent="."]
 margin_left = 1300.66
 margin_top = 386.988
 margin_right = 1358.66
@@ -68,8 +68,8 @@ text = "Level 4"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
-[connection signal="pressed" from="lvl1" to="." method="_on_lvl1_pressed"]
-[connection signal="pressed" from="lvl2" to="." method="_on_lvl2_pressed"]
-[connection signal="pressed" from="lvl3" to="." method="_on_lvl3_pressed"]
-[connection signal="pressed" from="lvl4" to="." method="_on_lvl4_pressed"]
+[connection signal="pressed" from="menuB" to="." method="_on_menuB_pressed"]
+[connection signal="pressed" from="lvl1B" to="." method="_on_lvl1B_pressed"]
+[connection signal="pressed" from="lvl2B" to="." method="_on_lvl2B_pressed"]
+[connection signal="pressed" from="lvl3B" to="." method="_on_lvl3B_pressed"]
+[connection signal="pressed" from="lvl4B" to="." method="_on_lvl4B_pressed"]
