@@ -42,3 +42,4 @@ pass
 func _add_level():
 	self.add_child(CurrentInstance)
 	get_tree().call_group("Goals", "connect", "detected", self, "_next_level")
+pass
