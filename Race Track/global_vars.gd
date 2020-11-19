@@ -8,6 +8,8 @@ var timelvl3 = 0
 var besttime3 = 0
 var besttime4 = 0
 var timelvl4 = 0
+var currentTime = 0
+
 
 var collect = 0
 

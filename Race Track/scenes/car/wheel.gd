@@ -18,3 +18,7 @@ func _get_direction():
 	if Input.is_key_pressed(KEY_D):
 		direction +=1
 	return direction
+
+
+
+
