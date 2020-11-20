@@ -38,12 +38,12 @@ rotation = -0.989582
 scale = Vector2( 3.24, 1.56 )
 
 [node name="floor6" parent="." instance=ExtResource( 4 )]
-position = Vector2( -14.0959, 2061.41 )
+position = Vector2( -302.747, 1737.12 )
 rotation = 0.853327
-scale = Vector2( 8.24508, 1.56 )
+scale = Vector2( 11.8314, 1.56 )
 
 [node name="zerograv" parent="." instance=ExtResource( 7 )]
-position = Vector2( -708.573, 528.745 )
+position = Vector2( -674.937, 525.381 )
 
 [node name="zerograv2" parent="." instance=ExtResource( 7 )]
 position = Vector2( -61.9207, 1810.21 )
@@ -70,7 +70,7 @@ position = Vector2( 202.91, -463.436 )
 position = Vector2( 349.404, -534.492 )
 
 [node name="zerograv4" parent="." instance=ExtResource( 7 )]
-position = Vector2( -751.907, 1180.79 )
+position = Vector2( -666.381, 1127.34 )
 
 [node name="zerograv5" parent="." instance=ExtResource( 7 )]
 position = Vector2( -60.7202, 568.159 )

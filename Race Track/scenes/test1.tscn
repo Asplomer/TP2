@@ -20,8 +20,24 @@ position = Vector2( 2081.46, -627.525 )
 position = Vector2( 626.947, 519.83 )
 rotation = 1.56588
 
+[node name="floor17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 869.545, 863.511 )
+rotation = 0.936724
+
+[node name="floor18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1781.67, 730.32 )
+rotation = 1.74308
+
+[node name="floor19" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1944.2, 533.772 )
+rotation = 1.57176
+
 [node name="floor9" parent="." instance=ExtResource( 4 )]
 position = Vector2( 625.612, 264.875 )
+rotation = 1.56588
+
+[node name="floor20" parent="." instance=ExtResource( 4 )]
+position = Vector2( 624.352, 5.33124 )
 rotation = 1.56588
 
 [node name="floor13" parent="." instance=ExtResource( 4 )]

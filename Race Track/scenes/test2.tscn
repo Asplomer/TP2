@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/levels/LevelClearTime.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scenes/platforms/seesaw.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/test2.gd" type="Script" id=7]
+[ext_resource path="res://images/seamless.png" type="Texture" id=8]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -22,6 +23,7 @@ physics_material_override = SubResource( 1 )
 polygon = PoolVector2Array( -192.475, -407.983, -35.6768, 340.372, 404.427, 340.372, 716.242, 235.246, 751.878, 381.354, -368.873, 648.623, -373.427, -371.361 )
 
 [node name="Polygon2D" type="Polygon2D" parent="freeshape"]
+texture = ExtResource( 8 )
 polygon = PoolVector2Array( -373.181, -371.217, -373.181, 648.783, 754.819, 384.783, 718.819, 236.783, 394.819, 340.783, -33.1809, 344.783, -193.181, -407.217 )
 
 [node name="freeshape3" type="StaticBody2D" parent="."]
@@ -34,6 +36,7 @@ physics_material_override = SubResource( 1 )
 polygon = PoolVector2Array( -192.475, -407.983, -35.6768, 340.372, 404.427, 340.372, 716.242, 235.246, 751.878, 381.354, -368.873, 648.623, -373.427, -371.361 )
 
 [node name="Polygon2D" type="Polygon2D" parent="freeshape3"]
+texture = ExtResource( 8 )
 polygon = PoolVector2Array( -373.181, -371.217, -373.181, 648.783, 754.819, 384.783, 718.819, 236.783, 394.819, 340.783, -33.1809, 344.783, -193.181, -407.217 )
 
 [node name="freeshape4" type="StaticBody2D" parent="."]
@@ -46,6 +49,7 @@ physics_material_override = SubResource( 1 )
 polygon = PoolVector2Array( -192.475, -407.983, -35.6768, 340.372, 404.427, 340.372, 716.242, 235.246, 751.878, 381.354, -368.873, 648.623, -373.427, -371.361 )
 
 [node name="Polygon2D" type="Polygon2D" parent="freeshape4"]
+texture = ExtResource( 8 )
 polygon = PoolVector2Array( -373.181, -371.217, -373.181, 648.783, 754.819, 384.783, 718.819, 236.783, 394.819, 340.783, -33.1809, 344.783, -193.181, -407.217 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
@@ -54,6 +58,7 @@ rotation = 4.79593
 scale = Vector2( 0.425321, 1.26638 )
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D2"]
+texture = ExtResource( 8 )
 polygon = PoolVector2Array( 342.879, -472.676, 501.449, -427.37, 610.939, 346.607, 14.4103, 365.484, -68.6508, 206.913, 206.961, 210.689, 391.96, 108.75, 233.389, -295.228 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
@@ -114,7 +119,17 @@ scale = Vector2( 1.13845, 1.04064 )
 position = Vector2( 1664.89, 884.77 )
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D3"]
+texture = ExtResource( 8 )
 polygon = PoolVector2Array( 246.945, -813.875, -166.309, -816.394, -690.437, -924.748, -715.635, -793.716, 7.55969, -544.251, 47.7986, 616.445, -94.7451, 680.59, -215.907, 719.79, -347.76, 719.79, -522.377, 709.099, -600.776, 677.026, -554.449, 744.735, -508.122, 869.461, 375.649, 840.952, 466.322, -1218.81, 341.596, -1215.24, 398.614, -1015.68 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D3"]
 polygon = PoolVector2Array( 341.57, -1215.44, 398.505, -1016.17, 248.675, -815.397, -170.852, -815.397, -690.764, -924.773, -714.737, -794.42, 5.94873, -545.701, 48.2979, 615.772, -210.448, 720.541, -518.404, 711.016, -604.124, 676.093, -551.74, 753.876, -507.292, 868.169, 375.302, 838.008, 467.372, -1222.44 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+texture = ExtResource( 8 )
+polygon = PoolVector2Array( 2818.4, 2883, 2822.63, 2281.22, 1517.38, 2289.7, 1521.61, 1815.06, 3576.97, 1810.82, 3589.69, 3747.52, 551.146, 3811.09, 551.146, 3650.05, 1106.3, 3607.67, 1377.53, 3514.44, 1470.76, 3192.36, 1458.05, 2895.71 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 551.146, 3654.29, 1102.07, 3607.67, 1377.53, 3514.44, 1466.52, 3192.36, 1453.81, 2895.71, 2822.63, 2883, 2822.63, 2276.99, 1513.14, 2289.7, 1513.14, 1806.58, 3576.97, 1806.58, 3593.92, 3751.76, 546.908, 3811.09 )
